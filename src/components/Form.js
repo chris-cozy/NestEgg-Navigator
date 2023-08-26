@@ -1,3 +1,5 @@
+import "./Form.css";
+
 function Form({ onCalculate }) {
   const handleSubmit = (e) => {
     e.preventDefault();
