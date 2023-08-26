@@ -2,6 +2,7 @@ import logo from "./assets/investment-calculator-logo.png";
 import { useState } from "react";
 import Form from "./components/Form";
 import ResultTable from "./components/ResultTable";
+import "./App.css";
 
 function App() {
   const [yearlyData, setYearlyData] = useState([]);

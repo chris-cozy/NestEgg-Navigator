@@ -1,4 +1,5 @@
 import YearlyDataRow from "./YearlyDataRow";
+import "./ResultTable.css";
 
 function ResultTable({ yearlyData }) {
   return (
