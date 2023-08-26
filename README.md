@@ -1,7 +1,7 @@
 # **NestEgg Navigator - Investment Calculator**
 
 NestEgg Navigator is a React.js web application that helps you project the growth of your investments over time. You can input your current savings, yearly contributions, expected interest rate, and investment duration to visualize how your savings will grow.
-![Investment Calculator Screenshot](src\assets\investment-calculator-screenshot.png)
+![Investment Calculator Screenshot](src/assets/investment-calculator-screenshot.png)
 
 ## **Features**
 
