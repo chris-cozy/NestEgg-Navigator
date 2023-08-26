@@ -11,11 +11,15 @@ function Form({ onCalculate }) {
       <div className="input-group">
         <p>
           <label htmlFor="current-savings">Current Savings ($)</label>
-          <input type="number" id="current-savings" />
+          <input type="number" name="current-savings" id="current-savings" />
         </p>
         <p>
           <label htmlFor="yearly-contribution">Yearly Savings ($)</label>
-          <input type="number" id="yearly-contribution" />
+          <input
+            type="number"
+            name="yearly-contribution"
+            id="yearly-contribution"
+          />
         </p>
       </div>
       <div className="input-group">
@@ -23,11 +27,11 @@ function Form({ onCalculate }) {
           <label htmlFor="expected-return">
             Expected Interest (%, per year)
           </label>
-          <input type="number" id="expected-return" />
+          <input type="number" name="expected-return" id="expected-return" />
         </p>
         <p>
           <label htmlFor="duration">Investment Duration (years)</label>
-          <input type="number" id="duration" />
+          <input type="number" name="duration" id="duration" />
         </p>
       </div>
       <p className="actions">
@@ -41,3 +45,5 @@ function Form({ onCalculate }) {
     </form>
   );
 }
+
+export default Form;

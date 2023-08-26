@@ -1,3 +1,5 @@
+import YearlyDataRow from "./YearlyDataRow";
+
 function ResultTable({ yearlyData }) {
   return (
     <table className="result">
@@ -17,3 +19,5 @@ function ResultTable({ yearlyData }) {
     </table>
   );
 }
+
+export default ResultTable;

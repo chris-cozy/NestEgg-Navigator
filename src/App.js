@@ -1,9 +1,13 @@
 import logo from "./assets/investment-calculator-logo.png";
+import { useState } from "react";
+import Form from "./components/Form";
+import ResultTable from "./components/ResultTable";
 
 function App() {
   const [yearlyData, setYearlyData] = useState([]);
 
   const calculateHandler = (userInput) => {
+    let newYearlyData = [];
     let currentSavings = +userInput["current-savings"];
     const yearlyContribution = +userInput["yearly-contribution"];
     const expectedReturn = +userInput["expected-return"] / 100;
@@ -12,15 +16,14 @@ function App() {
     for (let i = 0; i < duration; i++) {
       const yearlyInterest = currentSavings * expectedReturn;
       currentSavings += yearlyInterest + yearlyContribution;
-      yearlyData.push({
+      newYearlyData.push({
         year: i + 1,
         yearlyInterest: yearlyInterest,
         savingsEndOfYear: currentSavings,
         yearlyContribution: yearlyContribution,
       });
     }
-
-    setYearlyData(yearlyData);
+    setYearlyData(newYearlyData);
   };
 
   return (

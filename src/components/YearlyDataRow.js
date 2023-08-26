@@ -8,3 +8,5 @@ function YearlyDataRow({ data }) {
     </tr>
   );
 }
+
+export default YearlyDataRow;
